@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeToggle } from "@/components/theme-toggle";
-import { HeroScene } from "@/components/hero-scene";
 import {
   Github,
   Linkedin,
@@ -91,7 +90,15 @@ export default function Home() {
         />
       </Head>
 
-      <HeroScene />
+      {/* Decorative, theme-aware background layers (no WebGL) */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        {/* Top-right blob: larger blur; light mode more opaque, dark mode subtle */}
+        <div className="absolute right-[-20%] top-[-22%] h-[70vh] w-[70vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.cyan.300/.6),transparent_62%)] blur-[140px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.cyan.500/.25),transparent_62%)] dark:blur-[120px] blob-drift-a" />
+        {/* Bottom-left blob: larger blur; light mode more opaque, dark mode subtle */}
+        <div className="absolute left-[-28%] bottom-[-28%] h-[80vh] w-[80vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.emerald.300/.55),transparent_62%)] blur-[160px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.fuchsia.500/.20),transparent_62%)] dark:blur-[130px] blob-drift-b" />
+        {/* Subtle grid that adapts to theme */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,.06)_1px,transparent_1px)] bg-[size:24px_24px] opacity-[.06] dark:bg-[linear-gradient(to_right,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.08)_1px,transparent_1px)] dark:opacity-[.10]" />
+      </div>
 
       <header className="fixed right-3 top-3 z-10">
         <ThemeToggle />
