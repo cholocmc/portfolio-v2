@@ -97,9 +97,9 @@ export default function Home() {
         {/* Top-right inner glow */}
         <div className="absolute right-[-12%] top-[-14%] h-[46vh] w-[46vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.sky.600/.28),transparent_70%)] blur-[80px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.cyan.400/.22),transparent_70%)] blob-drift-a2" />
         {/* Bottom-left blob: larger blur; light mode more opaque, dark mode subtle */}
-        <div className="absolute left-[-28%] bottom-[-28%] h-[80vh] w-[80vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.emerald.700/.46),transparent_62%)] blur-[160px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.fuchsia.500/.20),transparent_62%)] dark:blur-[130px] blob-drift-b" />
+        <div className="absolute left-[-28%] bottom-[-28%] h-[80vh] w-[80vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.emerald.700/.46),transparent_62%)] blur-[160px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.cyan.500/.22),transparent_62%)] dark:blur-[130px] blob-drift-b" />
         {/* Bottom-left inner glow */}
-        <div className="absolute left-[-18%] bottom-[-18%] h-[54vh] w-[54vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.emerald.700/.30),transparent_72%)] blur-[90px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.fuchsia.400/.18),transparent_72%)] blob-drift-b2" />
+        <div className="absolute left-[-18%] bottom-[-18%] h-[54vh] w-[54vh] rounded-full bg-[radial-gradient(ellipse_at_center,theme(colors.emerald.700/.30),transparent_72%)] blur-[90px] dark:bg-[radial-gradient(ellipse_at_center,theme(colors.cyan.400/.18),transparent_72%)] blob-drift-b2" />
         {/* Subtle grid that adapts to theme */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,.06)_1px,transparent_1px)] bg-[size:24px_24px] opacity-[.06] dark:bg-[linear-gradient(to_right,rgba(255,255,255,.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,.08)_1px,transparent_1px)] dark:opacity-[.10]" />
       </div>

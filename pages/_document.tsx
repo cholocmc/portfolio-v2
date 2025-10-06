@@ -4,6 +4,8 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
         {/* Minimal theming to avoid flash of incorrect theme */}
         <script
           dangerouslySetInnerHTML={{
