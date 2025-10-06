@@ -167,4 +167,11 @@ body {
   .blob-drift-b {
     animation: driftB 32s linear infinite alternate;
   }
+  /* Out-of-phase variants for inner glows */
+  .blob-drift-a2 {
+    animation: driftA 34s linear infinite alternate-reverse;
+  }
+  .blob-drift-b2 {
+    animation: driftB 28s linear infinite alternate-reverse;
+  }
 }

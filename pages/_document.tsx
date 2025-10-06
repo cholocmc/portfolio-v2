@@ -7,7 +7,7 @@ export default function Document() {
         {/* Minimal theming to avoid flash of incorrect theme */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(() => { try { const stored = localStorage.getItem('theme'); const mql = window.matchMedia('(prefers-color-scheme: dark)'); const preference = stored ?? (mql.matches ? 'dark' : 'light'); const root = document.documentElement; root.classList.remove('dark','light'); root.classList.add(preference); document.body?.classList.remove('dark','light'); document.body?.classList.add(preference); } catch (_) {} })();`,
+            __html: `(() => { try { const stored = localStorage.getItem('theme'); const preference = stored ?? 'dark'; const root = document.documentElement; root.classList.remove('dark','light'); root.classList.add(preference); document.body?.classList.remove('dark','light'); document.body?.classList.add(preference); } catch (_) {} })();`,
           }}
         />
         <meta name="theme-color" content="#0a0a0a" />
