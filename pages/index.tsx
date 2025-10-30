@@ -123,8 +123,8 @@ export default function Home() {
             Carlos Miguel (Cholo) Canonizado
           </h1>
           <p className="mt-3 text-pretty text-sm opacity-80">
-            Senior Software Engineer turned Content Creator / Musician /
-            Freediving Coach
+            Technical Lead | Molchanovs Freediver and Affiliate | Content
+            Creator | Musician | etc.
           </p>
 
           <nav className="mt-8 grid grid-cols-4 gap-3 sm:grid-cols-7">
