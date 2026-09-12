@@ -121,7 +121,7 @@ export default function Home() {
             Technical Lead | Molchanovs Freediver | Content Creator | etc.
           </p>
 
-          <nav className="mt-8 grid grid-cols-4 gap-3 sm:grid-cols-7">
+          <nav className="mt-8 grid grid-cols-4 gap-3 sm:grid-cols-6">
             {LINKS.map(({ href, label, icon: Icon }) => (
               <Link
                 key={href}
