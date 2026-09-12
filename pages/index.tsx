@@ -1,6 +1,6 @@
-import Head from "next/head";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeToggle } from "@/components/theme-toggle";
+import Head from 'next/head';
+import { Geist, Geist_Mono } from 'next/font/google';
+import { ThemeToggle } from '@/components/theme-toggle';
 import {
   Github,
   Linkedin,
@@ -9,45 +9,40 @@ import {
   Music,
   Music2,
   AtSign,
-} from "lucide-react";
-import Link from "next/link";
+} from 'lucide-react';
+import Link from 'next/link';
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
+const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 });
 
 const LINKS = [
-  { href: "https://www.tiktok.com/@cholocmc", label: "TikTok", icon: Music2 },
+  { href: 'https://www.tiktok.com/@cholocmc', label: 'TikTok', icon: Music2 },
   {
-    href: "https://www.linkedin.com/in/cholocmc",
-    label: "LinkedIn",
+    href: 'https://www.linkedin.com/in/cholocmc',
+    label: 'LinkedIn',
     icon: Linkedin,
   },
-  { href: "https://www.github.com/cholocmc", label: "GitHub", icon: Github },
+  { href: 'https://www.github.com/cholocmc', label: 'GitHub', icon: Github },
   {
-    href: "https://www.facebook.com/cholocmc",
-    label: "Facebook",
+    href: 'https://www.facebook.com/cholocmc',
+    label: 'Facebook',
     icon: Facebook,
   },
   {
-    href: "https://www.instagram.com/cholocmc",
-    label: "Instagram",
+    href: 'https://www.instagram.com/cholocmc',
+    label: 'Instagram',
     icon: Instagram,
   },
-  { href: "https://www.threads.com/@cholocmc", label: "Threads", icon: AtSign },
-  {
-    href: "https://open.spotify.com/artist/4LAtQG3Q0uA6CkD1gHo6ia",
-    label: "Spotify",
-    icon: Music,
-  },
+  { href: 'https://www.threads.com/@cholocmc', label: 'Threads', icon: AtSign },
 ];
 
 export default function Home() {
-  const title = "CholoCMC";
+  const title = 'CholoCMC';
   const description = "CholoCMC's Portfolio";
-  const url = "https://www.cholocmc.com";
+  const url = 'https://www.cholocmc.com';
 
   return (
     <div
@@ -71,19 +66,19 @@ export default function Home() {
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Carlos Miguel (Cholo) Canonizado",
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: 'Carlos Miguel (Cholo) Canonizado',
               url,
-              alternateName: "CholoCMC",
+              alternateName: 'CholoCMC',
               sameAs: [
-                "https://www.tiktok.com/@cholocmc",
-                "https://www.linkedin.com/in/cholocmc",
-                "https://www.github.com/cholocmc",
-                "https://www.facebook.com/cholocmc",
-                "https://www.instagram.com/cholocmc",
-                "https://www.threads.com/@cholocmc",
-                "https://open.spotify.com/artist/4LAtQG3Q0uA6CkD1gHo6ia",
+                'https://www.tiktok.com/@cholocmc',
+                'https://www.linkedin.com/in/cholocmc',
+                'https://www.github.com/cholocmc',
+                'https://www.facebook.com/cholocmc',
+                'https://www.instagram.com/cholocmc',
+                'https://www.threads.com/@cholocmc',
+                'https://open.spotify.com/artist/4LAtQG3Q0uA6CkD1gHo6ia',
               ],
             }),
           }}
@@ -123,8 +118,7 @@ export default function Home() {
             Carlos Miguel (Cholo) Canonizado
           </h1>
           <p className="mt-3 text-pretty text-sm opacity-80">
-            Technical Lead | Molchanovs Freediver and Affiliate | Content
-            Creator | Musician | etc.
+            Technical Lead | Molchanovs Freediver | Content Creator | etc.
           </p>
 
           <nav className="mt-8 grid grid-cols-4 gap-3 sm:grid-cols-7">
